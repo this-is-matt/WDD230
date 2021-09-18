@@ -1,0 +1,28 @@
+body {
+  background-color: #CEE5F2;
+}
+header {
+background-color: #536B78;
+  display: grid;
+  grid-template-columns:1.5fr 1.5fr 1fr 1fr 2fr;
+}
+h1 {
+  grid-column: 2/3;
+  font-size: 50px;
+}
+#profilePic {
+grid-column: 4/5;
+max-width: 80%;
+}
+section{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+h2, ul{
+    grid-column: 2/3;
+    justify-items: center;
+}
+footer{
+    background-color:#536B78;
+    text-align: center;
+}
