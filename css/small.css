@@ -1,5 +1,7 @@
 body {
-  background-color: #cee5f2;
+  background-color: #F6F1D1;
+  color: #70A9A1;
+  font-family: 'Roboto', sans-serif;
 }
 header,
 main,
@@ -12,7 +14,7 @@ footer {
 header,
 footer {
   padding: 1.5rem;
-  background-color: #00a6ff;
+  background-color: #0B2027;
 }
 
 #profilePic {
@@ -30,8 +32,11 @@ h2 {
 
 main {
   text-align: center;
+  color: black;
 }
-
+main a{
+  color: black;
+}
 main ul {
   display: inline-block;
 }
@@ -39,4 +44,7 @@ main ul {
 footer,
 a {
   text-align: center;
+}
+footer a{
+  color: #70A9A1;
 }
