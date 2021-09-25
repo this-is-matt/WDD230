@@ -1,0 +1,42 @@
+body {
+  background-color: #cee5f2;
+}
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header,
+footer {
+  padding: 1.5rem;
+  background-color: #00a6ff;
+}
+
+#profilePic {
+  max-width: 250px;
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+main {
+  text-align: center;
+}
+
+main ul {
+  display: inline-block;
+}
+
+footer,
+a {
+  text-align: center;
+}
