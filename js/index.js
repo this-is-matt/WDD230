@@ -1,9 +1,4 @@
-var newDate = new Date();
+        const year = document.getElementById("year").textContent = new Date().getFullYear();
 
-        // year
-        var year = newDate.getFullYear();
-        console.log(year);
-        document.getElementById("year").innerHTML = year;
-
-        // get last modified
-        document.getElementById("lastModified").innerHTML = "Last Updated: " + new Date(document.lastModified);
+        
+        document.getElementById("lastModified").innerHTML = "Last Updated: " + document.lastModified;

@@ -1,31 +1,32 @@
-body {
+body{
   background-color: #cee5f2;
 }
-header {
-  background-color: #536b78;
-  color: rgb(151, 151, 151);
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 2fr;
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header, footer {
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: #00a6ff;
+}
+
+#profilePic {
+  max-width: 200px;
+  height: auto;
+  float: right;
 }
 h1 {
-  grid-column: 2/3;
   font-size: 50px;
+  text-align: center;
 }
-#profilePic {
-  grid-column: 4/5;
-  max-width: 80%;
+main{
+  text-align:center;
 }
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+main ul{
+  display:inline-block;
 }
-h2,
-ul {
-  grid-column: 2/3;
-  justify-items: center;
-}
-footer {
-  background-color: #536b78;
-  color: rgb(151, 151, 151);
+footer, a {
   text-align: center;
 }
