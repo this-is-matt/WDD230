@@ -1,20 +1,20 @@
 body {
-  background-color: #F6F1D1;
-  color: #70A9A1;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f6f1d1;
+  color: #70a9a1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 header,
 main,
 footer {
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
 }
 
 header,
 footer {
   padding: 1.5rem;
-  background-color: #0B2027;
+  background-color: #0b2027;
 }
 
 #profilePic {
@@ -24,27 +24,20 @@ footer {
 
 h1 {
   font-size: 3rem;
-  text-align: center;
 }
 h2 {
   font-size: 1.5rem;
 }
 
-main {
-  text-align: center;
+main, main a {
   color: black;
-}
-main a{
-  color: black;
-}
-main ul {
-  display: inline-block;
 }
 
-footer,
-a {
-  text-align: center;
+main ul {
+  display: inline-block;
+  text-align:left;
 }
-footer a{
-  color: #70A9A1;
+
+footer a {
+  color: #70a9a1;
 }

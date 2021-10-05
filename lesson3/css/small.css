@@ -17,17 +17,12 @@ footer {
   border-radius: 5px;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
   padding: 10px;
   color: #70a9a1;
 }
-header,
-nav,
-main,
-footer {
-  max-width: 767px;
-  margin: 0 auto;
+nav a, footer a{
+  color: #70a9a1;
+  text-decoration: none;
 }
 
 ul {
@@ -35,7 +30,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+ 
 }
+
 nav ul li a{
-    display: block; 
+    display: block;
 }
