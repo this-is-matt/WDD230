@@ -2,4 +2,4 @@
  
 
         //current date
-        const date = document.getElementById("date").textContent = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
+        const date = document.getElementById("date").textContent = new Date().toLocaleDateString('en-uk', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
