@@ -41,3 +41,7 @@ main ul {
 footer a {
   color: #70a9a1;
 }
+
+.nested{
+  display: block;
+}
