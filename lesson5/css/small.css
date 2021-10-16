@@ -87,7 +87,6 @@ main {
   margin: 2px;
 }
 .curStats {
-  color: white;
   text-align: left;
 }
 .flex {
@@ -136,7 +135,7 @@ article {
   font-size: 1.5rem;
 }
 article p {
-  text-align: justify;
+  text-align: left;
 }
 .imgFloat, .mapFloat {
   width: 50%;
