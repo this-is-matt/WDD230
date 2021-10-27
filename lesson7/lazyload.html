@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Lazy Load</title>
+    <meta name="description" content="This page is will test the lazy image loading method.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/lazyLoad.css">
+    <script defer src="js/lazyLoad.js"></script>
+
+</head>
+
+<body>
+    <h1>Lazy Loading Test</h1>
+    <div>Matt's Pics</div>
+    <picture>
+        <img src="images/placeHolder.gif" data-src="images/bananaLeaf.gif">
+        <img src="images/placeHolder.gif" data-src="images/cherryBlossoms.gif">
+        <img src="images/placeHolder.gif" data-src="images/granery.gif">
+        <img src="images/placeHolder.gif" data-src="images/hosta.gif">
+        <img src="images/placeHolder.gif" data-src="images/leafBokeh.gif">
+        <img src="images/placeHolder.gif" data-src="images/weatheredBannister.gif">
+    </picture>
+
+</body>
+
+</html>
