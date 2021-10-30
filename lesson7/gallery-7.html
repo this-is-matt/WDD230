@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Gallery | SE Idaho Report</title>
+    <meta name="description" content="Visitor pictures of the lregional area.">
+    <link rel="icon" href="images/mtn.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src='js/index.js'></script>
+    <script defer src="js/lazyLoad.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/mountain.svg" alt="Regional Logo">
+        <div>
+            <h1>SE Idaho Regional Report</h1>
+            <p class=motto>#1 local source for local news and weather</p>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p class="lastVisit"></p>
+        <picture>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/smokey.jpg">
+                <p>Smokey Sunset</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/sunRays.jpg" alt="Cloudy sun rays">
+                <p>Cloudy sun rays</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/rainyBuck.jpg"
+                    alt="Buck standing in rain">
+                <p>Buck standing in rain</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/cloudyPastures.jpg"
+                    alt="cloudy pasture landscape">
+                <p>Cloudy pasture landscape</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/wetDock.jpg"
+                    alt="Man standing on wet dock">
+                <p>Man standing on wet dock</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/blueSkies.jpg"
+                    alt="Blue Skies with a grassy foreground">
+                <p>Blue Skies with a grassy foreground</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/birdful.jpg"
+                    alt="Cloudy sun rays with a flock of birds">
+                <p>Cloudy sun rays with a flock of birds</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/armageddon.jpg"
+                    alt="Torando and lightening in a field">
+                <p>Torando and lightening in a field</p>
+            </div>
+            <div class="card">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/mistyFalls.jpg"
+                    alt="Cliffside waterfall in the mist">
+                <p>Cliffside waterfall in the mist</p>
+            </div>
+        </picture>
+    </main>
+    <footer>
+        <span>&copy; <span id="year"></span> | Matt Palmer | Utah | </span>
+        <a href="https://www.byui.edu/online">BYU Idaho University</a>
+        <p id="date"></p>
+    </footer>
+</body>
+
+</html>
