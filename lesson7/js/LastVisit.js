@@ -23,3 +23,4 @@ if( lastDate == ''){
     document.querySelector('lastVisit') = `looks like it has been ${dateDiff.toFixed(2)} days since you have visited our site.`;
 }
 
+d
