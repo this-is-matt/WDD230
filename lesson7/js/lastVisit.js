@@ -11,6 +11,5 @@ if (localStorage.length > 0) {
   localStorage.setItem("lastDate", now);
 } else {
   localStorage.setItem("lastDate", now);
-  lastVisit.textContent =
-    "Looks like this is your first time visiting. Thanks for coming!";
+  lastVisit.textContent = "Looks like this is your first time visiting. Thanks for coming!";
 }
