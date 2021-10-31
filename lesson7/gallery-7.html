@@ -7,15 +7,17 @@
     <title>Gallery | SE Idaho Report</title>
     <meta name="description" content="Visitor pictures of the lregional area.">
     <link rel="icon" href="images/mtn.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link defer rel="stylesheet" href="css/small.css">
+    <link defer rel="stylesheet" href="css/medium.css">
+    <link defer rel="stylesheet" href="css/large.css">
     <script defer src='js/index.js'></script>
     <script defer src="js/lazyLoad.js"></script>
+    <script defer src="js/lastVisit.js"></script>
 </head>
 
 <body>
+    <p class="lastVisit"></p>
     <header>
         <img src="images/mountain.svg" alt="Regional Logo">
         <div>
@@ -36,10 +38,9 @@
         </ul>
     </nav>
     <main>
-        <p class="lastVisit"></p>
         <picture>
             <div class="card">
-                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/smokey.jpg">
+                <img src="images/placeHolder.jpg" data-src="images/galleryOpt/smokey.jpg" alt="Smokey Sunset in Idaho">
                 <p>Smokey Sunset</p>
             </div>
             <div class="card">

@@ -1,26 +1,16 @@
-// need Current time
-// need if to det. if first visit or last visit
-//f to do calculation
-//f to update local storage
-//const to det. mil to day conversion
-
-const now = new Date.now();
+const now = Date.now();
 const milToDay = 86400000;
+const lastVisit = document.querySelector("p.lastVisit");
+let localStorageDate;
 
-// try{
-    const lastDate = localStorage.getItem('lastDate');
-// }
-// catch(er) {
 
-// }
-
-if( lastDate == ''){
-    localStorage.setItem('lastDate', now);
-    document.querySelector('lastVisit') = "Looks like this is your first time visiting. Thanks for coming!";
-} else{
-    const dateDiff = (now - lastDate)/ milToDay;
-    /*get rid of this ->*/ console.log(dateDiff);
-    document.querySelector('lastVisit') = `looks like it has been ${dateDiff.toFixed(2)} days since you have visited our site.`;
+if (localStorage.length > 0) {
+  localStorageDate = parseFloat(localStorage.getItem("lastDate"));
+  const dateDiff = (now - localStorageDate) / milToDay;
+  lastVisit.textContent = `Looks like it has been ${dateDiff.toFixed(5)} days since you have visited our site.`;
+  localStorage.setItem("lastDate", now);
+} else {
+  localStorage.setItem("lastDate", now);
+  lastVisit.textContent =
+    "Looks like this is your first time visiting. Thanks for coming!";
 }
-
-d

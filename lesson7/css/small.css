@@ -176,3 +176,10 @@ picture {
   color: #70a9a1;
   overflow: hidden;
 }
+.lastVisit{
+  background-color: #0b2027;
+  color: #70a9a1;
+  padding: 1rem;
+  font-size: larger;
+  margin:0 auto;
+}
