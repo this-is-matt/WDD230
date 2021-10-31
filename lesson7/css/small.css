@@ -169,8 +169,6 @@ article p {
 .card {
   display: inline-block;
   margin: 1rem 1rem 0 0;
-  max-width: 320px;
-  box-shadow: 1px 1px 4px 1px #888;
   border-radius: 5px;
   background-color: #0b2027;
   color: #70a9a1;
