@@ -7,6 +7,7 @@ table {
   box-shadow: 5px 5px 10px #888;
   max-width: 800px;
   min-width: 300px;
+  border-collapse: collapse;
 }
 th,
 #novSG {
