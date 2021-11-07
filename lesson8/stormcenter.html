@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Storm Center | SE Idaho Report</title>
+    <link rel="icon" href="images/mtn.ico" type="image/x-icon">
+    <meta name="description"
+        content="web page is for users to report storms of peculiar weather in their area within the SE Idaho Region.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/toggleMenu.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/mountain.svg" alt="Regional Logo">
+        <div>
+            <h1>SE Idaho Regional Report</h1>
+            <p class=motto>#1 source for local news and weather</p>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thanks.html" >
+            <fieldset>
+            <legend>Personal Information</legend>
+            <label>*Full Name: <input name="FullName" type="text" required placeholder="John Doe"
+                    pattern="[a-zA-Z]+\s[a-zA-Z]+" minlength="5"></label>
+            <label>email: <input name="email" type="email" placeholder="someone@gmail.com"></label>
+            <label>*Phone Number: <input name="phoneNum" type="tel" required placeholder="i.e. 1112223333"></label>
+            <label>*Zip Code: <input name="zip" type="number" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Weather Information</legend>
+            <label>Storm Date: <input name="date" type="date"></label>
+            <label>Storm Type:
+                <datalist id="stormType">
+                    <option id="stormType">Flash Flood</option>
+                    <option id="stormType">Hail</option>
+                    <option id="stormType">Hurricane</option>
+                    <option id="stormType">Thunderstorm</option>
+                    <option id="stormType">Tornado</option>
+                </datalist>
+                <input autoComplete="on" list="stormType">
+            </label>
+            <label>Storm Severity (1-10): <input name="severity" type="range" min="1" max="10" required
+                    placeholder=""></label>
+            <label>Region:
+                <select id="region">
+                    <option value="">Select Region </option>
+                    <option value="preston">Preston</option>
+                    <option value="Soda">Soda Springs</option>
+                    <option value="Fish">Fish Haven</option>
+                </select>
+            </label>
+            <div>User in-danger Level:</div>
+            <label><input name="dangerLevel" type="radio" required placeholder=""> Yes</label>
+            <label><input name="dangerLevel" type="radio" required placeholder=""> No</label>
+            <label><input name="dangerLevel" type="radio" required placeholder=""> Maybe</label>
+            <label>Additional Comments: <textarea name="comments   "></textarea></label>
+        </fieldset>
+            <button type="submit">Report Weather</button>
+        </form>
+    </main>
+    <footer>
+        <span>&copy; <span id="year"></span> | Matt Palmer | Utah | </span>
+        <a href="https://www.byui.edu/online">BYU Idaho University</a>
+        <div id="date"></div>
+    </footer>
+</body>
+
+</html>

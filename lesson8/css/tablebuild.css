@@ -6,7 +6,7 @@ table {
   margin: 0 auto;
   box-shadow: 5px 5px 10px #888;
   max-width: 800px;
-  min-width: 300px;
+  min-width: 250px;
   border-collapse: collapse;
 }
 th,
