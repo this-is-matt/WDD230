@@ -51,16 +51,15 @@
             <label>Storm Date: <input name="date" type="date"></label>
             <label>Storm Type:
                 <datalist id="stormType">
-                    <option id="stormType">Flash Flood</option>
-                    <option id="stormType">Hail</option>
-                    <option id="stormType">Hurricane</option>
-                    <option id="stormType">Thunderstorm</option>
-                    <option id="stormType">Tornado</option>
+                    <option>Flash Flood</option>
+                    <option>Hail</option>
+                    <option>Hurricane</option>
+                    <option>Thunderstorm</option>
+                    <option>Tornado</option>
                 </datalist>
                 <input autoComplete="on" list="stormType">
             </label>
-            <label>Storm Severity (1-10): <input name="severity" type="range" min="1" max="10" required
-                    placeholder=""></label>
+            <label>Storm Severity (1-10): <input name="severity" type="range" min="1" max="10"></label>
             <label>Region:
                 <select id="region">
                     <option value="">Select Region </option>
@@ -70,9 +69,9 @@
                 </select>
             </label>
             <div>User in-danger Level:</div>
-            <label><input name="dangerLevel" type="radio" required placeholder=""> Yes</label>
-            <label><input name="dangerLevel" type="radio" required placeholder=""> No</label>
-            <label><input name="dangerLevel" type="radio" required placeholder=""> Maybe</label>
+            <label><input name="dangerLevel" type="radio"> Yes</label>
+            <label><input name="dangerLevel" type="radio"> No</label>
+            <label><input name="dangerLevel" type="radio"> Maybe</label>
             <label>Additional Comments: <textarea name="comments   "></textarea></label>
         </fieldset>
             <button type="submit">Report Weather</button>
