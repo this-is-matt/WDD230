@@ -11,6 +11,10 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  margin-bottom: 0;
+}
+h3{
+  font-size: 1.5rem;
 }
 header {
   display: flex;
@@ -47,6 +51,7 @@ footer {
   padding: 1rem 0;
   color: #70a9a1;
   background-color: #0b2027;
+  margin: .5rem 0 0 0;
 }
 footer p {
   margin: 0;
@@ -76,6 +81,7 @@ main {
 .heroImg {
   width: 100%;
   grid-column: 1/2;
+  margin-top:1rem;
 }
 .curSum {
   margin: 10px auto;
@@ -141,7 +147,7 @@ article {
   background-color: #bec7ca75;
   margin: 10px 0;
   padding: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 article p {
   text-align: left;
@@ -226,4 +232,18 @@ form button{
   background-color: rgb(64, 155, 64);
   border: 1px solid rgb(44, 110, 44);
   border-radius: 8px;
+}
+
+/* ----- Home ----- */
+.localInfo h2, .localInfo h3{
+  padding-left: 0;
+  
+}
+.localInfo article{
+  max-width: 75%;
+  margin: .5rem auto;
+}
+.localInfo img{
+  width:100%;
+  min-width: 300px;
 }

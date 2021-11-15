@@ -1,7 +1,11 @@
 @media only screen and (min-width: 900px) {
-  h2 {
+  h2{
     text-align: left;
     padding-left: 3rem;
+  }
+  h3{
+    text-align: left;
+    padding-left: 2rem;
   }
   .navigation {
     display: flex;
@@ -47,4 +51,24 @@ legend{
 }
 
 
+/* ----- home ----- */
+.localInfo article {
+  display: flex;
+	flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 100%;
+}
+
+.localInfo article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.localInfo{
+  display: flex;
+	flex-wrap: wrap;
+}
+.localInfo img{
+  width:auto;
+}
 }
