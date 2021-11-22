@@ -37,7 +37,7 @@ header div{
 nav {
 	margin: 0 auto;
 	font-size: 1.25rem;
-	background-color: #0b2027;
+	/* background-color: #0b2027; */
 	color: #70a9a1;
 }
 .navigation {

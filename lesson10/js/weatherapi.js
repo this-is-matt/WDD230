@@ -1,5 +1,5 @@
 const apiURL =
-  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1ad4bbe7e1f20d81e8438c99fb698385";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1ad4bbe7e1f20d81e8438c99fb698385";
 
 //Info for weather widget
 fetch(apiURL)
