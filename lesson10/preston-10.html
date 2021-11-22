@@ -17,7 +17,7 @@
     <script defer src="js/index.js"></script>
     <script defer src="js/toggleMenu.js"></script>
     <script defer src="js/alert.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <script defer src='js/weatherapi.js'></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="../lesson9/index.html">Home</a></li>
-            <li><a href="../lesson6/preston-6.html" class="active">Preston</a></li>
+            <li><a href="../lesson10/preston-10.html" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -53,45 +53,45 @@
             <div class="curSum">
                 <h3 class="curHead">Weather Summary</h3>
                 <p>Currently:</p>
-                <p class="curStats"> Sunny</p>
-                <p>Temp:</p>
-                <p class="curStats"><span class="temp">45</span>℉</p>
+                <p class="curStats"><span id="currently"></span></p>
+                <p>Current Temp:</p>
+                <p class="curStats"><span id="temp"></span>℉</p>
                 <p>Wind Chill:</p>
-                <p class="curStats"><span class="windChill">N/A</span></p>
+                <p class="curStats"><span id="windChill">N/A</span></p>
                 <p>Humidity:</p>
-                <p class="curStats"> 80%</p>
+                <p class="curStats"><span id="humidity"></span>%</p>
                 <p>Wind Speed:</p>
-                <p class="curStats"><span class="windSpd">12</span> MPH</p>
+                <p class="curStats"><span id="windSpd"></span> MPH</p>
             </div>
         </section>
         <section>
             <h2>Five Day Forecast</h2>
-            <div class="flex">
-                <div class="flex-col">
-                    <span class="col-head">Sun</span>
-                    <img class="forecastIcon" src="images/sun.webp" alt="Weather Icon">
-                    <span class="data">Day 1</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Mon</span>
-                    <img class="forecastIcon" src="images/sun.webp" alt="Weather Icon">
-                    <span class="data">Day 2</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Tues</span>
-                    <img class="forecastIcon" src="images/sun.webp" alt="Weather Icon">
-                    <span class="data">Day 3</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Wed</span>
-                    <img class="forecastIcon" src="images/sun.webp" alt="Weather Icon">
-                    <span class="data">Day 4</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Thur</span>
-                    <img class="forecastIcon" src="images/sun.webp" alt="Weather Icon">
-                    <span class="data">Day 5</span>
-                </div>
+            <div class="forecast">
+                <p class="flex-col">
+                    <span id="dayofweek1"></span> 
+                    <img id="img1">
+                    <span id="forecast1"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek2"></span>
+                    <img id="img2"> 
+                    <span id="forecast2"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek3"></span>
+                    <img id="img3">
+                    <span id="forecast3"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek4"></span>
+                    <img id="img4">
+                    <span id="forecast4"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek5"></span>
+                    <img id="img5">
+                    <span id="forecast5"></span>
+                </p>
             </div>
         </section>
         <article>
@@ -120,7 +120,10 @@
                 <img class="mapFloat" src="images/mapOpt.jpg" alt="map">
             </a>
             <div class="socialCopy">
-                <p> We are so glad you have come to visit our regional site. This is a small side project that we have put together to serve the community. We are always grateful for feedback and suggestions. We are also happy to answer any questions you may have. We haev also linked out social media sites to the page so you can get regional news right in your social media feeds.<br> <br>
+                <p> We are so glad you have come to visit our regional site. This is a small side project that we have
+                    put together to serve the community. We are always grateful for feedback and suggestions. We are
+                    also happy to answer any questions you may have. We haev also linked out social media sites to the
+                    page so you can get regional news right in your social media feeds.<br> <br>
                     Phone Number: 555-555-5555 <br>
                     Email: seirr@gmail.com <br>
                     Address: 1234 A street, Preston ID 83263<br>

@@ -20,6 +20,11 @@
 	.navigation li:first-child {
 		display: none;
 	}
+  /* why not work? */
+.active {
+  color: white;
+  font-weight: bold;
+}
   header{
     flex-direction: row;
   }
