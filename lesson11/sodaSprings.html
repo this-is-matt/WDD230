@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Preston | SE Idaho Report</title>
+    <meta name="description" content="A town page for Preston Idaho. This page is used for town updates.">
+    <link rel="icon" href="images/mtn.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/toggleMenu.js"></script>
+    <script defer src="js/alert.js"></script>
+    <script defer src='js/weatherapi.js'></script>
+</head>
+
+<body>
+    <div class="alert">Saturday = Soda Springs Burgers 🍔 in the Park! 5:00 p.m. Saturday at the city park stage.</div>
+    <header>
+        <img src="images/mountain.svg" alt="Regional Logo">
+        <div>
+            <h1>SE Idaho Regional Report</h1>
+            <p class=motto>#1 source for local news and weather</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs Idaho</h2>
+        <section class="hero">
+            <!-- needs to get updated with new images -->
+            <picture class="heroImg">
+                <source media="(max-width: 400px)" srcset="images/hero400.jpg">
+                <source media="(max-width: 900px)" srcset="images/hero900.jpg">
+                <source media="(max-width: 1200px)" srcset="images/hero1100.jpg">
+                <img src="images/heroDefault.jpg" class="heroImg" alt="banner image">
+            </picture>
+            <div class="curSum">
+                <h3 class="curHead">Weather Summary</h3>
+                <p>Currently:</p>
+                <p class="curStats"><span id="currently"></span></p>
+                <p>Current Temp:</p>
+                <p class="curStats"><span id="temp"></span>℉</p>
+                <p>Wind Chill:</p>
+                <p class="curStats"><span id="windChill">N/A</span></p>
+                <p>Humidity:</p>
+                <p class="curStats"><span id="humidity"></span>%</p>
+                <p>Wind Speed:</p>
+                <p class="curStats"><span id="windSpd"></span> MPH</p>
+            </div>
+        </section>
+        <section>
+            <h2>Five Day Forecast</h2>
+            <div class="forecast">
+                <p class="flex-col">
+                    <span id="dayofweek1"></span> 
+                    <img id="img1">
+                    <span id="forecast1"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek2"></span>
+                    <img id="img2"> 
+                    <span id="forecast2"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek3"></span>
+                    <img id="img3">
+                    <span id="forecast3"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek4"></span>
+                    <img id="img4">
+                    <span id="forecast4"></span>
+                </p>
+                <p class="flex-col">
+                    <span id="dayofweek5"></span>
+                    <img id="img5">
+                    <span id="forecast5"></span>
+                </p>
+            </div>
+        </section>
+        <article>
+            <h2>Home Town</h2>
+            <!-- had this img in webp and it made my score worse -->
+            <img class="imgFloat" src="images/Article.jpg" alt="flowers">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.<br></p>
+
+        </article>
+        <section>
+            <h2>Contact Info</h2>
+            <a href="https://goo.gl/maps/PdhZXPhQGBNM5GPf6" rel="noreferrer" target="_blank">
+                <img class="mapFloat" src="images/mapOpt.jpg" alt="map">
+            </a>
+            <div class="socialCopy">
+                <p> We are so glad you have come to visit our regional site. This is a small side project that we have
+                    put together to serve the community. We are always grateful for feedback and suggestions. We are
+                    also happy to answer any questions you may have. We haev also linked out social media sites to the
+                    page so you can get regional news right in your social media feeds.<br> <br>
+                    Phone Number: 555-555-5555 <br>
+                    Email: seirr@gmail.com <br>
+                    Address: 1234 A street, Preston ID 83263<br>
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link" class="social"
+                            src="images/socialIcons/facebook.png" /></a>
+                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link" class="social"
+                            src="images/socialIcons/instagram.png" /></a>
+                    <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link" class="social"
+                            src="images/socialIcons/twitter.png" /></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"> SE Idaho Regional Report</span> | <a href="#">Attributions </a> | Matt Palmer |
+        </p>
+        <div id="date"></div>
+    </footer>
+    <!-- made my score worse -->
+    <!-- <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="js/webFont.js"></script> -->
+</body>
+
+</html>
