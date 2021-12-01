@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Preston | SE Idaho Report</title>
-    <meta name="description" content="A town page for Preston Idaho. This page is used for town updates.">
+    <meta name="description" content="A town page for Soda Springs Idaho. This page is used for town updates.">
     <link rel="icon" href="images/mtn.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +16,11 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/index.js"></script>
     <script defer src="js/toggleMenu.js"></script>
-    <script defer src="js/alert.js"></script>
     <script defer src='js/weatherapi.js'></script>
+    <script defer src="js/localEvents.js"></script>
 </head>
 
 <body>
-    <div class="alert">Saturday = Soda Springs Burgers 🍔 in the Park! 5:00 p.m. Saturday at the city park stage.</div>
     <header>
         <img src="images/mountain.svg" alt="Regional Logo">
         <div>
@@ -32,9 +31,9 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="sodaSprings.html"  class="active">Soda Springs</a></li>
             <li><a href="fishHaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -63,6 +62,8 @@
                 <p>Wind Speed:</p>
                 <p class="curStats"><span id="windSpd"></span> MPH</p>
             </div>
+        </section>
+        <section class="localEvents">
         </section>
         <section>
             <h2>Five Day Forecast</h2>

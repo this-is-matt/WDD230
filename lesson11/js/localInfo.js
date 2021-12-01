@@ -6,10 +6,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject["towns"];
-    console.table(jsonObject); // temporary checking for valid response and data parsing
     for (let i = 0; i < towns.length; i++) {
       let card = document.createElement("article");
-
       let data = document.createElement("div");
       card.appendChild(data);
 
@@ -40,17 +38,6 @@ fetch(requestURL)
         rain.textContent = `Average Rainfall: ${towns[i].averageRainfall}`;
         data.appendChild(rain);
 
-        // events
-        let h3 = document.createElement("h3");
-        h3.textContent = "Events:";
-        data.appendChild(h3);
-        for (let x = 0; x <= towns[i].events.length; x++) {
-          let event = document.createElement("p");
-          event.textContent = towns[i].events[x];
-          data.appendChild(event);
-        }
-
-        // data.setAttribute("class", "tdata");
         document.querySelector("section.localInfo").appendChild(card);
       }
     }

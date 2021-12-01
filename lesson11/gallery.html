@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Gallery | SE Idaho Report</title>
-    <meta name="description" content="Visitor pictures of the lregional area.">
+    <meta name="description" content="Visitor pictures of the regional area.">
     <link rel="icon" href="images/mtn.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src='js/index.js'></script>
+    <script defer src="js/toggleMenu.js"></script>
     <script defer src="js/lazyLoad.js"></script>
     <script defer src="js/lastVisit.js"></script>
 </head>
@@ -29,12 +30,12 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodaSprings.html">Soda Springs</a></li>
             <li><a href="fishHaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.html"  class="active">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -84,6 +85,30 @@
                 <p>Cliffside waterfall in the mist</p>
             </div>
         </section>
+        <section>
+            <h2>Contact Info</h2>
+            <a href="https://goo.gl/maps/PdhZXPhQGBNM5GPf6" rel="noreferrer" target="_blank">
+                <img class="mapFloat" src="images/mapOpt.jpg" alt="map">
+            </a>
+            <div class="socialCopy">
+                <p> We are so glad you have come to visit our regional site. This is a small side project that we have
+                    put together to serve the community. We are always grateful for feedback and suggestions. We are
+                    also happy to answer any questions you may have. We haev also linked out social media sites to the
+                    page so you can get regional news right in your social media feeds.<br> <br>
+                    Phone Number: 555-555-5555 <br>
+                    Email: seirr@gmail.com <br>
+                    Address: 1234 A street, Preston ID 83263<br>
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link"
+                            class="social" src="images/socialIcons/facebook.png" /></a>
+                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link"
+                            class="social" src="images/socialIcons/instagram.png" /></a>
+                    <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link"
+                            class="social" src="images/socialIcons/twitter.png" /></a>
+                </div>
+            </div>
+        </section>  
     </main>
     <footer>
         <span>&copy; <span id="year"></span> | Matt Palmer | Utah | </span>

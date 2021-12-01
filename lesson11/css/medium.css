@@ -1,37 +1,40 @@
 @media only screen and (min-width: 900px) {
-  h2{
+  h2 {
     text-align: left;
     padding-left: 3rem;
   }
-  h3{
+  h3 {
     text-align: left;
     padding-left: 2rem;
   }
   .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block;
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
   /* why not work? */
-.active {
-  color: white;
-  font-weight: bold;
-}
-  header{
+  .active {
+    color: white;
+    font-weight: bold;
+  }
+  header {
     flex-direction: row;
   }
-  header div{
+  header div {
     margin: auto 1rem;
   }
-  .curSum{
+  .localEvents{
+    max-width: 450px;
+  }
+  .curSum {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -43,45 +46,77 @@
     float: right;
     margin-left: 1.5rem;
   }
-  .mapFloat{
+  .mapFloat {
     width: 35%;
     float: left;
     margin-right: 1.5rem;
   }
-  
-/* ----- Form ----- */
-form label, form div, form button{
-  margin: .5rem;
-}
 
-form input, form select, form textarea{
-  padding: .5rem;
-  margin-top: 3px;
-  width: 60%;
-}
-legend{
-  font-size: 1.75rem;
-}
+  /* ----- Form ----- */
+  .stormCenter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  form {
+    grid-column: 1/2;
+    grid-row:1/3;
+  }
+  .SCArticle {
+    display: block;
+    grid-column: 2/3;
+    background-color: #f6f1d1;
+  }
+  .SCArticle h3{
+    margin-top: 0;
+    text-align: center;
+    padding: 0;
+  }
+  .sCContact{
+    grid-column: 2/3;
+    grid-
+   }
+  form label,
+  form div,
+  form button {
+    margin: 0.5rem;
+  }
 
+  form input,
+  form select,
+  form textarea {
+    padding: 0.5rem;
+    margin-top: 3px;
+    width: 60%;
+  }
+  legend {
+    font-size: 1.75rem;
+  }
+  form button {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0b2027;
+    color: #70a9a1;
+  }
 
-/* ----- home ----- */
-.localInfo article {
-  display: flex;
-	flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  max-width: 100%;
-}
+  /* ----- home ----- */
+  .localInfo article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 100%;
+  }
 
-.localInfo article:nth-child(odd) {
-	flex-direction: row-reverse;
-}
+  .localInfo article:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 
-.localInfo{
-  display: flex;
-	flex-wrap: wrap;
-}
-.localInfo img{
-  width:auto;
-}
+  .localInfo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .localInfo img {
+    width: auto;
+  }
 }

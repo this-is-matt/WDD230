@@ -7,13 +7,14 @@
     <title>Storm Center | SE Idaho Report</title>
     <link rel="icon" href="images/mtn.ico" type="image/x-icon">
     <meta name="description"
-        content="web page is for users to report storms of peculiar weather in their area within the SE Idaho Region.">
+        content="Web page is for users to report storms with peculiar weather in their area within the SE Idaho Region.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/index.js"></script>
     <script defer src="js/toggleMenu.js"></script>
+    <script defer src="js/range.js"></script>
 </head>
 
 <body>
@@ -28,54 +29,93 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodaSprings.html">Soda Springs</a></li>
             <li><a href="fishHaven.html">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <form method="get" action="thanks.html" >
+    <main class="stormCenter">
+        <form method="get" action="thanks.html">
             <fieldset>
-            <legend>Personal Information</legend>
-            <label>*Full Name: <input name="FullName" type="text" required placeholder="John Doe"
-                    pattern="[a-zA-Z]+\s[a-zA-Z]+" minlength="5"></label>
-            <label>email: <input name="email" type="email" placeholder="someone@gmail.com"></label>
-            <label>*Phone Number: <input name="phoneNum" type="tel" required placeholder="i.e. 1112223333"></label>
-            <label>*Zip Code: <input name="zip" type="number" required></label>
-        </fieldset>
-        <fieldset>
-            <legend>Weather Information</legend>
-            <label>Storm Date: <input name="date" type="date"></label>
-            <label>Storm Type:
-                <datalist id="stormType">
-                    <option>Flash Flood</option>
-                    <option>Hail</option>
-                    <option>Hurricane</option>
-                    <option>Thunderstorm</option>
-                    <option>Tornado</option>
-                </datalist>
-                <input autoComplete="on" name="stormType" list="stormType">
-            </label>
-            <label>Storm Severity (1-10): <input name="severity" type="range" min="1" max="10"></label>
-            <label>Region:
-                <select id="region">
-                    <option value="">Select Region </option>
-                    <option value="preston">Preston</option>
-                    <option value="Soda">Soda Springs</option>
-                    <option value="Fish">Fish Haven</option>
-                </select>
-            </label>
-            <div>User in-danger Level:</div>
-            <label><input name="dangerLevel" type="radio"> Yes</label>
-            <label><input name="dangerLevel" type="radio"> No</label>
-            <label><input name="dangerLevel" type="radio"> Maybe</label>
-            <label>Additional Comments: <textarea name="comments   "></textarea></label>
-        </fieldset>
+                <legend>Personal Information</legend>
+                <label>*Full Name: <input name="FullName" type="text" required placeholder="John Doe"
+                        pattern="[a-zA-Z]+\s[a-zA-Z]+" minlength="5"></label>
+                <label>email: <input name="email" type="email" placeholder="someone@gmail.com"></label>
+                <label>*Phone Number: <input name="phoneNum" type="tel" required placeholder="i.e. 1112223333"></label>
+                <label>*Zip Code: <input name="zip" type="number" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Weather Information</legend>
+                <label>Storm Date: <input name="date" type="date"></label>
+                <label>Storm Type:
+                    <datalist id="stormType">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist>
+                    <input autoComplete="on" name="stormType" list="stormType">
+                </label>
+                <label>Storm Severity (1-10): <span class="severity"></span><input name="severity" type="range" min="1"
+                        max="10" oninput="adjustRating(this.value)"></label>
+                <label>Region:
+                    <select id="region">
+                        <option value="">Select Region </option>
+                        <option value="preston">Preston</option>
+                        <option value="Soda">Soda Springs</option>
+                        <option value="Fish">Fish Haven</option>
+                    </select>
+                </label>
+                <div>User in-danger Level:</div>
+                <label><input name="dangerLevel" type="radio"> Yes</label>
+                <label><input name="dangerLevel" type="radio"> No</label>
+                <label><input name="dangerLevel" type="radio"> Maybe</label>
+                <label>Additional Comments: <textarea name="comments   "></textarea></label>
+            </fieldset>
             <button type="submit">Report Weather</button>
         </form>
+        <article class="SCArticle">
+            <h3>The Value of Contributing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
+        </article>
+        <section class="sCContact">
+            <h2>Contact Info</h2>
+            <a href="https://goo.gl/maps/PdhZXPhQGBNM5GPf6" rel="noreferrer" target="_blank">
+                <img class="mapFloat" src="images/mapOpt.jpg" alt="map">
+            </a>
+            <div class="socialCopy">
+                <p>
+                    Phone Number: 555-555-5555 <br>
+                    Email: seirr@gmail.com <br>
+                    Address: 1234 A street, Preston ID 83263<br>
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link"
+                            class="social" src="images/socialIcons/facebook.png" /></a>
+                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link"
+                            class="social" src="images/socialIcons/instagram.png" /></a>
+                    <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link"
+                            class="social" src="images/socialIcons/twitter.png" /></a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <span>&copy; <span id="year"></span> | Matt Palmer | Utah | </span>

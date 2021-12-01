@@ -18,6 +18,7 @@
     <script defer src="js/toggleMenu.js"></script>
     <script defer src="js/alert.js"></script>
     <script defer src='js/weatherapi.js'></script>
+    <script defer src="js/localEvents.js"></script>
 </head>
 
 <body>
@@ -32,8 +33,8 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html" class="active">Preston</a></li>
             <li><a href="sodaSprings.html">Soda Springs</a></li>
             <li><a href="fishHaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
@@ -64,17 +65,19 @@
                 <p class="curStats"><span id="windSpd"></span> MPH</p>
             </div>
         </section>
+        <section class="localEvents">
+        </section>
         <section>
             <h2>Five Day Forecast</h2>
             <div class="forecast">
                 <p class="flex-col">
-                    <span id="dayofweek1"></span> 
+                    <span id="dayofweek1"></span>
                     <img id="img1">
                     <span id="forecast1"></span>
                 </p>
                 <p class="flex-col">
                     <span id="dayofweek2"></span>
-                    <img id="img2"> 
+                    <img id="img2">
                     <span id="forecast2"></span>
                 </p>
                 <p class="flex-col">
@@ -94,6 +97,7 @@
                 </p>
             </div>
         </section>
+
         <article>
             <h2>Home Town</h2>
             <!-- had this img in webp and it made my score worse -->
@@ -129,12 +133,12 @@
                     Address: 1234 A street, Preston ID 83263<br>
                 </p>
                 <div>
-                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link" class="social"
-                            src="images/socialIcons/facebook.png" /></a>
-                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link" class="social"
-                            src="images/socialIcons/instagram.png" /></a>
-                    <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link" class="social"
-                            src="images/socialIcons/twitter.png" /></a>
+                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link"
+                            class="social" src="images/socialIcons/facebook.png" /></a>
+                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link"
+                            class="social" src="images/socialIcons/instagram.png" /></a>
+                    <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link"
+                            class="social" src="images/socialIcons/twitter.png" /></a>
                 </div>
             </div>
         </section>

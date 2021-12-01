@@ -1,5 +1,17 @@
-const apiURL =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1ad4bbe7e1f20d81e8438c99fb698385";
+const page = document.querySelector(".active").textContent;
+let apiURL;
+switch(page)
+{
+  case "Preston":
+    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1ad4bbe7e1f20d81e8438c99fb698385";
+    break;
+  case "Soda Springs":
+    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=1ad4bbe7e1f20d81e8438c99fb698385";
+    break;
+  default: //Fish Haven
+    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=1ad4bbe7e1f20d81e8438c99fb698385";
+    break;
+}
 
 //Info for weather widget
 fetch(apiURL)
