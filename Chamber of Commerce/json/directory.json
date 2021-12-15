@@ -1,0 +1,84 @@
+{
+  "directory": [
+    {
+      "id": "0",
+      "businessName": "MarketStar Corporation",
+      "phone": "(800) 877-8259",
+      "address": "2475 Washington Blvd. Ogden UT",
+      "zip": "84401",
+      "website": "https://www.marketstar.com/",
+      "logo": "https://chambermaster.blob.core.windows.net/images/customers/2934/members/2089/logos/MEMBER_LOGOSEARCH/marketstar_logo_orange_back_white_star.jpg",
+      "logoAlt": "MarketStar Logo"
+    },
+    {
+      "id": "1",
+      "businessName": "Metro National Title",
+      "phone": "(801) 232-4070",
+      "address": "6033 Fashion Pointe Drive, Suite 90, South Ogden, UT",
+      "zip": "84403",
+      "website": "https://www.metrotitle.com/",
+      "logo": "https://www.metrotitle.com/wp-content/uploads/2017/02/metro-logo-v3.png",
+      "logoAlt": "Metro Logo"
+    },
+    {
+      "id": "2",
+      "businessName": "SymbolArts",
+      "phone": "(801) 475-6000",
+      "address": "6083 South 1550 East, Ogden, UT",
+      "zip": "84405",
+      "website": "https://symbolarts.com/",
+      "logo": "https://symbolarts.com/wp-content/uploads/2020/03/logo.png",
+      "logoAlt": "SymbolArts Logo"
+    },
+    {
+      "id": "3",
+      "businessName": "Target River",
+      "phone": "(619) 571-7359",
+      "address": "136 E South Temple, Suite 1400, Salt Lake City, UT",
+      "zip": "84111",
+      "website": "https://www.targetriver.com/",
+      "logo": "https://www.targetriver.com/assets/images/logo.png",
+      "logoAlt": "Target River Logo"
+    },
+    {
+      "id": "4",
+      "businessName": "OasisHR, a Paychex Company",
+      "phone": "(801) 683-9197",
+      "address": "1004 W 3000 N Pleasant View, UT",
+      "zip": "84414",
+      "website": "https://www.oasisadvantage.com/",
+      "logo": "https://www.oasisadvantage.com/themes/custom/oasis/logo.svg",
+      "logoAlt": "Oasis Logo"
+    },
+    {
+      "id": "5",
+      "businessName": "Boyle Appliances and Service Center",
+      "phone": "(801) 393-5365",
+      "address": "146 East 36th Street Ogden UT",
+      "zip": "84405",
+      "website": "https://www.boyleappliance.com/",
+      "logo": "https://d12mivgeuoigbq.cloudfront.net/assets/store-logos/gboy1.png",
+      "logoAlt": "Boyle Appliance Logo"
+    },
+    {
+      "id": "6",
+      "businessName": "America First Credit Union",
+      "phone": "(801) 627-0900",
+      "address": "1344 West 4675 South Riverdale UT",
+      "zip": "84405",
+      "website": "https://www.americafirst.com/",
+      "logo": "https://www.americafirst.com/content/dam/afcu/logo/logo-desktop-inverse.png",
+      "logoAlt": "America First Logo"
+    },
+    {
+      "id": "7",
+      "businessName": "Honeyville Inc",
+      "phone": "(385) 374-9400",
+      "address": "1040 W 600 N Ogden Utah",
+      "zip": "84404",
+      "website": "https://honeyville.com/",
+      "logo": "https://honeyville.com/wp-content/themes/fluid-yeti/assets/img/honeyville-nav-logo.png",
+      "logoAlt": "Honeyville Logo"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Directory | Ogden CHamber of Commerce</title>
+    <meta name="description" content="A lits of all the members of the Ogden Chamber of Commerce">
+    <link rel="icon" href="images/optimized/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/directory.js"></script>
+    <script defer src="js/toggleDirectory.js"></script>
+    <script defer src="js/toggleMenu.js"></script>
+
+    <script defer src=""></script>
+</head>
+
+<body>
+    <header>
+        <img class="cityLogo" src="images/optimized/logo.png" alt="Ogden City Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ogdenCity.html">Ogden City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a class="join" href="join.html">JOIN US!</a>
+    </header>
+
+    <main>
+        <div class="buttons">
+            <img src="images/gridView.png" alt="Grid Button" onclick="toggle(1)">
+            <img src="images/listView.png" alt="List Button" onclick="toggle(0)">
+        </div>
+        <section id="dir" class="directory"></section>
+    </main>
+    <footer>
+        <span>&copy; <span id='year'></span> | Matt Palmer | Utah | </span>
+        <a href='https://www.byui.edu/online'>BYU Idaho University</a>
+        <div id='lastModified'></div>
+    </footer>
+</body>
+
+</html>

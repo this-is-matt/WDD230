@@ -5,51 +5,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Home | Ogden Chamber of Commerce</title>
-    <meta name="description" content="~155 characters summarizing with keywords the page content - on page SEO"><!--this need to be finished-->
+    <meta name="description" content="Learn about the Ogden Chamber of Commerce and more about the Ogden area.">
+    <link rel="icon" href="images/optimized/logo.ico" type="image/x-icon">
+    <!--this needs to be finished-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <script defer src='js/index.js'></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/carousal.js"></script>
+    <script defer src="js/toggleMenu.js"></script>
+    <script defer src="js/oneCall.js"></script>
 
     <script defer src=""></script>
 </head>
 
 <body>
+    <div class="weatherAlert"></div>
     <header>
-        <img class="cityLogo" src="images/royLogo.svg" alt="City Logo">
+        <img class="cityLogo" src="images/optimized/logo.png" alt="Ogden City Logo">
         <nav>
-            <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="royCity.html"></a>Roy City</li>
-                <li><a href="join.html"></a>Join</li>
-                <li><a href="directory.html"></a>Directory</li>
-                <li><a href="contact.html"></a>Contact us</li>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ogdenCity.html">Ogden City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a class="join" href="join.html">Join Us!</a>
+        <a class="join" href="join.html">JOIN US!</a>
     </header>
+    <div>
+        <div class="slideshow-container fade">
+            <div class="Containers">
+                <img src="images/optimized/bdo.jpg" style="width:100%">
+                <!-- <div class="Info">First caption</div> -->
+            </div>
+
+            <div class="Containers">
+                <img src="images/optimized/25th.jpg" style="width:100%">
+                <!-- <div class="Info">Second Caption</div> -->
+            </div>
+
+            <div class="Containers">
+                <img src="images/optimized/ogdenSign.jpg" style="width:100%">
+                <!-- <div class="Info">Third Caption</div> -->
+            </div>
+
+
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
     <main>
-        <section class="localImages"></section>
-        <section class="ads">Soloman Center, Ogden Business Depot, Union Station</section>
-        <section class="callToAction"></section>
-        <section class="events"></section>
-        <section class="description"></section>
-        <section class="contact"></section>
-        <section class="social">
-            <div>
-                <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link"
-                        class="social" src="images/socialIcons/facebook.png" /></a>
-                <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link"
-                        class="social" src="images/socialIcons/instagram.png" /></a>
-                <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link"
-                        class="social" src="images/socialIcons/twitter.png" /></a>
+        <section class="description">
+            <h2>Ogden Chamber of Commerce</h2>
+            <p>Founded in 1887, the Ogden Chamber of Commerce is a nonprofit organization dedicated to advancing
+                business and community prosperity in northern Utah. Based in Ogden, the Chamber represents 775+
+                organizations in 15 cities and several unincorporated areas in Weber County.</p>
+        </section>
+        <section class="ad">
+            <div class="card">
+                <img src="images/originals/marketstar.jpg" alt="MarketStar">
+                <div>
+                    <p>MarketStar Coporation</p>
+                    <P>The way sales and advertising should be done.</P>
+                    <p>📍2475 WASHINGTON BLVD.<br>
+                        OGDEN, UT 84401<br><br>
+                        ☎️(800) 877-8259</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/originals/bdo-logo.png" alt="BDO">
+                <div>
+                    <p>Ogden Business Depot</p>
+                    <P>Where the real work happens</P>
+                    <p>📍1150 S DEPOT DR, STE 100<br>
+                        OGDEN, UT 84404<br><br>
+                        ☎️(801) 399-9885</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/originals/symbolArts.png" alt="SymbolArts">
+                <div>
+                    <p>SymbolArts</p>
+                    <P>Do you have graphic design needs? we are here to help</P>
+                    <p>📍6083 South 1550 East<br>
+                        OGDEN, UT 84405<br><br>
+                        ☎️(801) 475-6000</p>
+                </div>
             </div>
         </section>
-        <section class="weather"></section>
+        <div class="SecContainer">
+            <section class="callToAction">
+                <p>There are many benefits to becoming a member of the Ogden City Chamber of Commerce. As a member in
+                    our
+                    most affordable package, you will
+                    enjoy:</p>
+                <ul>
+                    <li>Member discounts at participating business</li>
+                    <li>Free access to networking events</li>
+                    <li>your business will be listed in our yearly business directory book and on our webiste</li>
+                    <li>Discounted ad options throughout the Ogden Valley and our website</li>
+                    <li>Many more benefits</li>
+                </ul>
+                <p>We want your business in our Chamber of Commerce</p>
+                <a class="join" href="join.html">JOIN US!</a>
+            </section>
+            <article class="current">
+                <h3>Events</h3>
+                <section>
+                    <p>Dec 16</p>
+                    <p>Spiker Executive Committee Meeting</p>
+                </section>
+                <section>
+                    <p>Dec 17</p>
+                    <p>LNU Education Day: Conflict Resolution & Managing People</p>
+                </section>
+                <section>
+                    <p>Dec 21</p>
+                    <p>Partners in Education</p>
+                </section>
+            </article>
+
+            <section class="weather">
+                <div class="curSum">
+                    <h3 class="curHead">Weather Summary</h3>
+                    <p>Currently:</p>
+                    <p class="curStats"><span id="currently"></span></p>
+                    <p>Current Temp:</p>
+                    <p class="curStats"><span id="temp"></span>℉</p>
+                    <p>Humidity:</p>
+                    <p class="curStats"><span id="humidity"></span>%</p>
+                </div>
+                <div>
+                    <h3>Five Day Forecast</h3>
+                    <div class="forecast">
+                        <p class="flex-col">
+                            <span id="dayofweek1"></span>
+                            <img id="img1" src="" alt"">
+                            <span id="forecast1"></span>
+                        </p>
+                        <p class="flex-col">
+                            <span id="dayofweek2"></span>
+                            <img id="img2" src="" alt"">
+                            <span id="forecast2"></span>
+                        </p>
+                        <p class="flex-col">
+                            <span id="dayofweek3"></span>
+                            <img id="img3" src="" alt"">
+                            <span id="forecast3"></span>
+                        </p>
+                    </div>
+            </section>
+            <section>
+                <h3>Contact us</h3>
+                Please reach out to Ogden City with any concerns or questions you migh have below:
+                <form>
+                    <label for="name">Name:
+                        <input id="name" type="text">
+                    </label>
+                    <label for="email"> Email:
+                        <input id="email" type="text">
+                    </label>
+                    <label for="comments">Comments:
+                        <textarea name="comments"></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+                Please allow 4 days for our small staff to provide you with a response.<br>
+                If you have concerns for the Ogden Chamber of Commerce, plese use this <a href="contact.html">link</a>.
+            </section>
+            <section class="socialSection">
+                <p>We love to talk and interact with our members! Join us on our social platforms to be in know on
+                    upcoming
+                    deals, events, and registrestration perions. We know that one of the biggest benefits that we can
+                    offer
+                    the community is networking and team work opportunities to grow our community together.</p>
+                <div>
+                    <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img alt="Facebook Link"
+                            class="social" src="images/socialIcons/facebook.png" /></a>
+                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img alt="Instagram Link"
+                            class="social" src="images/socialIcons/instagram.png" /></a>
+                    <a href="https://twitter.com/" rel="noreferrer" target="_blank"><img alt="Twitter Link"
+                            class="social" src="images/socialIcons/twitter.png" /></a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <span>&copy; <span id='year'></span> | Matt Palmer | Ogden Utah</span>
+        <span>&copy; <span id='year'></span> | Matt Palmer | Ogden Utah| <a
+                href="attributions.html">Attributions</a></span>
         <a href='https://www.byui.edu/online'>BYU-Idaho</a>
         <div id='today'></div>
     </footer>

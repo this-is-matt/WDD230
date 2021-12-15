@@ -1,32 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ogden City | Chamber of Commerce</title>
+    <meta name="description" content="A history of Ogden Utah as well as current events.">
+    <link rel="icon" href="images/optimized/logo.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/carousal.js"></script>
+    <script defer src="js/toggleMenu.js"></script>
+
 </head>
+
 <body>
     <header>
-        <img class="cityLogo" src="images/royLogo.svg" alt="City Logo">
+        <img class="cityLogo" src="images/optimized/logo.png" alt="Ogden City Logo">
         <nav>
-            <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="royCity.html"></a>Roy City</li>
-                <li><a href="join.html"></a>Join</li>
-                <li><a href="directory.html"></a>Directory</li>
-                <li><a href="contact.html"></a>Contact us</li>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ogdenCity.html">Ogden City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a class="join" href="join.html">Join Us!</a>
+        <a class="join" href="join.html">JOIN US!</a>
     </header>
-    <main>
+    <div>
+        <div class="slideshow-container fade images">
+            <div class="Containers">
+                <img src="images/optimized/bdo.jpg" style="width:100%">
 
+            </div>
+
+            <div class="Containers">
+                <img src="images/optimized/25th.jpg" style="width:100%">
+                >
+            </div>
+
+            <div class="Containers">
+
+                <img src="images/optimized/ogdenSign.jpg" style="width:100%">
+                >
+            </div>
+
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div class="imgDots">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <main>
+        <section class="intro">
+            <h1>Ogden City</h1>
+            <P>The city of Ogden was founded in 1846 by trapper Miles Goodyear. The city is named after another trapper
+                names Peter Skene Ogden. We are proud of the history that we have in the Railroad, trapping, and
+                industrial industries.<br>
+                Until the early 1980's we claimed 2nd place in terms or population in Utah. Now, we still have a strong
+                population that is still seing steady growth. In 2013 we were listed as no. 16 on Forbes' list of Best
+                Places for Business and Careers.</P>
+            <p>Ogden has seen varied growth throughout it's long history. We have begun to see slower growth level
+                throughout the last few decades and this is due mainly to expanded growth in other parts of the state
+                that are close to the capital. We have many programs to help bolster the growth levels included new
+                policies that have been passed to allow for more affordable housing and revitalization programs to give
+                areas of our grand city a facelift and some curb appeal.</p>
+        </section>
+        <section class="demographics">
+            <h2>Demographics</h2>
+            <table>
+                <tr>
+                    <th scope="colgroup" colspan="3">Ogden Demographics</th>
+                </tr>
+                <tr>
+                    <th scope="col" id="year">Year</th>
+                    <th scope="col" id="population">Population</th>
+                    <th scope="col" id="change">% Change</th>
+                </tr>
+                <tr>
+                    <td>1850</td>
+                    <td>500</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>1860</td>
+                    <td>1,464</td>
+                    <td>192.8%</td>
+                </tr>
+                <tr>
+                    <td>1870</td>
+                    <td>3,127</td>
+                    <td>113.6%</td>
+                </tr>
+                <tr>
+                    <td>1880</td>
+                    <td>6,069</td>
+                    <td>94.1%</td>
+                </tr>
+                <tr>
+                    <td>1890</td>
+                    <td>14,889</td>
+                    <td>145.3%</td>
+                </tr>
+                <tr>
+                    <td>1900</td>
+                    <td>16,313</td>
+                    <td>9.6%</td>
+                </tr>
+                <tr>
+                    <td>1910</td>
+                    <td>25,580</td>
+                    <td>56.8%</td>
+                </tr>
+                <tr>
+                    <td>1920</td>
+                    <td>32,804</td>
+                    <td>28.2%</td>
+                </tr>
+                <tr>
+                    <td>1930</td>
+                    <td>40,272</td>
+                    <td>22.8%</td>
+                </tr>
+                <tr>
+                    <td>1940</td>
+                    <td>43,688</td>
+                    <td>8.7%</td>
+                </tr>
+                <tr>
+                    <td>1950</td>
+                    <td>57,112</td>
+                    <td>30.7%</td>
+                </tr>
+                <tr>
+                    <td>1960</td>
+                    <td>70,197</td>
+                    <td>22.9%</td>
+                </tr>
+                <tr>
+                    <td>1970</td>
+                    <td>69,478</td>
+                    <td>-1.0%</td>
+                </tr>
+                <tr>
+                    <td>1980</td>
+                    <td>64,407</td>
+                    <td>-7.3%</td>
+                </tr>
+                <tr>
+                    <td>1990</td>
+                    <td>63,909</td>
+                    <td>-0.8</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>77,226</td>
+                    <td>20.8%</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>82,825</td>
+                    <td>7.3%</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>87,321</td>
+                    <td>5.4%</td>
+                </tr>
+                <tr>
+                    <td headers="year population change" colspan="3">Sourced from <a
+                            href="https://en.wikipedia.org/wiki/Ogden,_Utah#Economy">Wikipedia</a>.</td>
+                </tr>
+            </table>
+        </section>
+        <article class="current">
+            <h2>Current Events</h2>
+            <section>
+                <h3>Browing Gun Club Meeting</h3>
+                <p class="date">Dec 14 Tue</p>
+                <p>Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke
+                    Room next to the Browning Gun Museum. Donuts and juice are served.</p>
+            </section>
+            <section>
+                <h3>Holiday Shopping at the Carriage House Gallery</h3>
+                <p class="date">Dec 14 Tue</p>
+                <p>Craft your holiday shopping while supporting local artists visit the Carriage House Gallery at the
+                    Eccles Art Center, 2580 Jefferson Avenue, Ogden. Special holiday shopping hours are set for
+                    Tuesday,…</p>
+            </section>
+            <section>
+                <h3>Golden Spike Dog Obedience Club Dog / Handler Training</h3>
+                <p class="date">Dec 14 Tue</p>
+                <p>Classes from puppy through agility. MUST register first at <a href="www.gsdoc.org">www.gsdoc.org</a>
+                </p>
+            </section>
+        </article>
+        <section class="ogdenContact">
+            <h2>Contact us</h2>
+            Please reach out to Ogden City with any concerns or questions you migh have below:
+            <form>
+                <label for="name">Name:
+                    <input id="name" type="text">
+                </label>
+                <label for="email"> Email:
+                    <input id="email" type="text">
+                </label>
+                <label for="comments">Comments:
+                    <textarea name="comments"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+            Please allow 4 days for our small staff to provide you with a response.<br>
+            If you have concerns for the Ogden Chamber of Commerce, plese use this <a href="contact.html">link</a>.
+        </section>
     </main>
     <footer>
-        <span>&copy; <span id='year'></span> | Matt Palmer | Ogden Utah</span>
+        <span>&copy; <span id='year'></span> | Matt Palmer | Ogden Utah | <a
+                href="attributions.html">Attributions</a></span> |
         <a href='https://www.byui.edu/online'>BYU-Idaho</a>
         <div id='today'></div>
     </footer>
 </body>
+
 </html>
+<!-- <p>Ogden has seen varied growth throughout it's long history. We have begun to see slower growth level throughout the last few decades and this is due mainly to expanded growth in other parts of the state that are close to the capital. We have many programs to help bolster the growth levels included new policies that have been passed to allow for more affordable housing and revitalization programs to give areas of our grand city a facelift and some curb appeal.</p> -->
