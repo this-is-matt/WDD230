@@ -4,7 +4,6 @@ let apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsonObject) => {
-    console.table(jsonObject);
     document.querySelector("#temp").textContent =
       jsonObject.current.temp.toFixed(0);
     document.querySelector("#humidity").textContent =
@@ -14,13 +13,9 @@ fetch(apiURL)
   });
 
 //three day
-//5 day forecast
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsonObject) => {
-    // const array = jsonObject.daily;
-    // console.log(array);
-    // let day = 0;
     const weekdays = [
       "Sunday",
       "Monday",
@@ -34,16 +29,14 @@ fetch(apiURL)
     for (let i = 1; i < 4; i++) {
       let theDate = new Date();
       theDate.setDate(today.getDate() + i);
-      console.log(theDate);
       document.querySelector(`#dayofweek${i}`).textContent =
         weekdays[theDate.getDay()];
 
 
       document.querySelector(`#forecast${i}`).textContent =
-        jsonObject.daily[i].temp.day.toFixed(0);
+        `${jsonObject.daily[i].temp.day.toFixed(0)}℉`;
       const imagesrc = `https://openweathermap.org/img/wn/${jsonObject.daily[i].weather[0].icon}.png`;
       const desc = jsonObject.daily[i].weather[0].description;
-      console.log(desc);
       document.getElementById(`img${i}`).setAttribute("src", imagesrc);
       document.getElementById(`img${i}`).setAttribute("alt", desc);
     }

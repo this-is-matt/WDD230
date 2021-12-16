@@ -4,8 +4,6 @@
      if(n == 1){
         document.querySelector("#dir").classList.add(grid);
         document.querySelector("#dir").classList.remove(list);
-        
-        console.log("grid");
      }
      else{
         document.querySelector("#dir").classList.add(list);
