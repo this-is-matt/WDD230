@@ -1,37 +1,15 @@
-@media only screen and (min-width: 1000px) {
-  header {
-    flex-flow: row;
-    justify-content: space-between;
+@media only screen and (min-width: 600px) {
+  /* Directory */
+  .card {
+    width: 300px;
   }
-  header img {
-    width: 75px;
-    flex: 0 0 auto;
+  .board {
+    grid-template-columns: repeat(2, 1fr);
   }
-  nav {
-    flex: 1 1 auto;
-    box-shadow: none;
-    background-color: #fff;
-    align-self: flex-end;
-    max-width: 800px;
-  }
-  nav ul li a {
-    color: black;
-    font: 1rem;
-  }
-  .join {
-    flex: 0 0 auto;
-  }
-  nav ul {
-    display: flex;
-  }
-  nav ul li {
-    display: block;
-    flex: 1 1 auto;
-  }
-  nav ul a {
-    text-align: center;
-  }
-  nav ul li:first-child {
-    display: none;
+  
+  /* contact */
+  iframe {
+    width: 550px;
+    height: 413px;
   }
 }
